@@ -1,7 +1,8 @@
 # EC2-termination
  Automate Termination of EC2 Instances base on Tags using Lambda function and EventBridge(CloudWatch Events)
  
-#Prerequisite 
+**#Prerequisite **
+
 An AWS account
 
 Install awscli using aws official documentation here 
@@ -10,10 +11,12 @@ Install python and boto3
 
 Configure aws cli by using official documentation here 
 
-#Boto3 
+**#Boto3 **
+
 Boto3 is the name of the Python SDK for AWS. It allows you to directly create, update, and delete AWS resources from your Python scripts. 
 
-#Steps to automate termination of EC2 instance having tag: 
+**#Steps to automate termination of EC2 instance having tag: **
+
 Launch EC2 instance having a tag with key value. 
 
 Create IAM role->create policy->use EC2 as service->In action choose Terminate Instance and add another policy name” AmazonEC2ReadOnlyAccess” 
